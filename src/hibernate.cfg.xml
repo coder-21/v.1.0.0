@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+	<!--   Related to DB Connection begin -->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <!-- System Local IP -->
+<!--     <property name="connection.url">jdbc:mysql://localhost:3306/mydb</property> -->
+<!--     <property name="connection.username">root</property> -->
+<!--     <property name="connection.password">password1234</property> -->
+	
+<!-- 	<property name="connection.url">jdbc:mysql://localhost:3306/mydb</property> -->
+<!-- 	Local Database -->
+
+<!--     <property name="connection.url">jdbc:mysql://192.168.1.119:3306/test</property> -->
+
+<!-- Connection string for Amazon MYSQL server -->
+<property name="connection.url">jdbc:mysql://awstestdbinstance.cohsyjw90hi5.us-west-2.rds.amazonaws.com:3306/AWStestDB</property>
+
+<!-- Connection string for Amazon AURORA server -->
+<!-- <property name="connection.url">jdbc:mysql://awstestdbinstance-migrated-cluster.cluster-cohsyjw90hi5.us-west-2.rds.amazonaws.com:3306/AWStestDB</property> -->
+
+    <!--  Office Server IP-->
+<!--     <property name="connection.url">jdbc:mysql://192.168.0.14:3306/test</property> -->
+<!--     Home Server IP -->
+<!--     <property name="connection.username">diana</property> -->
+<!--     <property name="connection.password">lazar</property> -->
+
+
+<!-- username and password remains same for MYSQL and AURORA -->
+    <property name="connection.username">root</property>
+    <property name="connection.password">findgoose2015</property>
+    <!--   Related to DB Connection end -->
+    
+    <!-- JDBC connection pool (use the built-in) -->
+    <property name="connection.pool_size">1</property>
+    
+    
+    <!--   Related to Hibernate Properties begin -->
+    <property name="show_sql">true</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hbm2ddl.auto">update</property>
+    <!--   Related to Hibernate Properties end -->
+    
+    <!--   Related to Hibernate Annotated Entity class -->
+    <mapping class="com.FG.user.UserRegistrationInfo"/>
+    <mapping class="com.FG.company.CompanyInfo"/>
+    <mapping class="com.FG.company.CompanyEmployeesInfo"/>    
+	<mapping class="com.FG.investor.InvestorInfo"/>
+	<mapping class="com.FG.user.UserList"/>
+	<mapping class="com.FG.user.UserTeamTableInfo"/>
+	<mapping class="com.FG.company.IndustryTypes"/>
+	<mapping class="com.FG.company.Locations"/>
+	<mapping class="com.FG.company.CompanyProfile_userCreated"/>
+	<mapping class="com.FG.events.EventsEnrolled"/>		
+	<mapping class="com.FG.Subscription.SubscriptionInfo"/>
+	<mapping class="com.FG.user.UserDocument"/>
+	<mapping class="com.FG.visitor.VisitorMessageInfo"/>
+    
+    <!--   Related to Hibernate Properties end -->
+  </session-factory>
+</hibernate-configuration>

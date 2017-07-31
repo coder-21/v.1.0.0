@@ -1,0 +1,115 @@
+/*
+Document : style
+Created on : Oct 5, 2015
+Author	 : Diana
+Description:
+Purpose of the stylesheet follows.
+*/
+root {
+display: block;
+}
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+
+#mystyle{
+/* border:solid 2px #0080ff;
+background: #72b8b8;
+border-radius: 5px;
+*/
+font-family: Arial, "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+}
+#mystyle h1 {
+font-size:20px;
+font-weight:bold;
+color:#2980b9;
+}
+#mystyle span{
+display:block;
+text-align:right;
+width:300px;
+float:center;
+}
+
+#mystyle p{
+font-size:14px;
+color:#666666;
+padding-bottom:10px;
+}
+#mystyle label{
+display:block;
+font-weight:bold;
+font-size:15px;
+text-align:right;
+width:140px;
+float:left;
+color: #414141;
+}
+#mystyle .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#mystyle input{
+float:left;
+font-size:15px;
+padding:4px 2px;
+border:solid 1px #2980b9;
+width:200px;
+margin:2px 0 20px 10px;
+border-radius: 5px;
+}
+#mystyle button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#ff8000;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:15px;
+font-weight:bold;
+border-radius: 5px;
+display: inline-block;
+}
+#mystyle button:hover{
+	background: #2980b9;
+}
+#mystyle .reset{
+	float:center;
+	font-size:15px;
+	display: inline;
+	margin:0px;
+	background-color:#808080;
+	width: calc(20%);
+}
+#redirects{
+	margin:2px 0 20px 10px;
+	text-align: center;
+	padding-top: 4px;
+	padding-left: 80px;
+}
+#agreesTerms label{
+	display: inline-block;
+}
+#agreesTerms checkbox{
+	display: inline;
+}
+table, tr, td{
+border-radius: 5px;
+border:solid 1px burlywood;
+padding: 5px;
+width: max-content;
+}
